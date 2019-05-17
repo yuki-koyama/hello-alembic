@@ -22,6 +22,8 @@ set(USE_TESTS              OFF CACHE INTERNAL "" FORCE)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/external/alembic)
 target_include_directories(Alembic PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/external/alembic/lib>)
 
-file(GLOB files src/*.cpp src/*.hpp)
-add_executable(hello-alembic ${files})
-target_link_libraries(hello-alembic Alembic)
+add_executable(minimum ${CMAKE_CURRENT_SOURCE_DIR}/src/minimum.cpp)
+target_link_libraries(minimum Alembic)
+
+add_executable(simple ${CMAKE_CURRENT_SOURCE_DIR}/src/simple.cpp)
+target_link_libraries(simple Alembic)
