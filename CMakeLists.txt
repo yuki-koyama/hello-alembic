@@ -25,5 +25,5 @@ target_include_directories(Alembic PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOUR
 add_executable(minimum ${CMAKE_CURRENT_SOURCE_DIR}/src/minimum.cpp)
 target_link_libraries(minimum Alembic)
 
-add_executable(simple ${CMAKE_CURRENT_SOURCE_DIR}/src/simple.cpp)
-target_link_libraries(simple Alembic)
+add_executable(vertex-animation ${CMAKE_CURRENT_SOURCE_DIR}/src/vertex-animation.cpp)
+target_link_libraries(vertex-animation Alembic)

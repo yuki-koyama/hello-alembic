@@ -54,7 +54,7 @@ int main()
     constexpr int32_t counts[] = { 4, 4, 4, 4, 4, 4 };
     constexpr float dt = 1.0f / 60.0f;
 
-    OArchive archive(Alembic::AbcCoreOgawa::WriteArchive(), "test.abc");
+    OArchive archive(Alembic::AbcCoreOgawa::WriteArchive(), "vertex-animation.abc");
 
     const TimeSampling time_sampling(dt, 0);
     const uint32_t time_sampling_index = archive.addTimeSampling(time_sampling);
